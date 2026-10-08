@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mobile App Developer Salary in India: Skills &amp; Career Growth</title>
+<meta name="description" content="Slide through years of experience and see how a mobile app developer salary in India changes. Skills, career versions, courses and guides in one place.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400..700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#dfe6ff;
+  --paper:#f7f8ff;
+  --ink:#15193f;
+  --ink2:#454a7a;
+  --coral:#ff6a3d;
+  --mint:#27c98a;
+  --grape:#6b4cff;
+  --sun:#ffc43d;
+  --line:#c7d0f5;
+  --display:'Bricolage Grotesque','Trebuchet MS',system-ui,sans-serif;
+  --body:'Figtree','Segoe UI',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--sky);color:var(--ink);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--grape);outline-offset:3px;border-radius:10px}
+.wrap{width:min(1120px,92%);margin:0 auto}
+h1,h2,h3{font-family:var(--display);line-height:1.1;letter-spacing:-0.02em}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(223,230,255,.88);backdrop-filter:blur(10px);border-bottom:2px solid var(--ink)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);font-weight:800;font-size:1.25rem}
+.logo i{width:34px;height:34px;border-radius:11px;background:var(--coral);border:2px solid var(--ink);display:grid;place-items:center;box-shadow:3px 3px 0 var(--ink)}
+.logo i::after{content:"";width:12px;height:12px;border-radius:50%;background:var(--paper);border:2px solid var(--ink)}
+nav{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+nav a{text-decoration:none;padding:8px 14px;border-radius:999px;font-weight:600;font-size:.95rem}
+nav a:hover{background:var(--paper)}
+nav a.go{background:var(--ink);color:var(--paper)}
+nav a.go:hover{background:var(--grape)}
+
+/* hero */
+.hero{padding:64px 0 40px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.tag{display:inline-block;background:var(--sun);border:2px solid var(--ink);border-radius:999px;padding:5px 14px;font-weight:700;font-size:.9rem;margin-bottom:20px}
+h1{font-size:clamp(2.5rem,5.6vw,4.6rem);font-weight:800}
+.hero p.lead{margin:20px 0 28px;font-size:1.15rem;color:var(--ink2);max-width:52ch}
+.panel{background:var(--paper);border:2px solid var(--ink);border-radius:26px;padding:24px;box-shadow:7px 7px 0 var(--ink)}
+.panel h3{font-size:1.15rem;margin-bottom:14px}
+label.t{display:flex;justify-content:space-between;font-weight:700;margin:14px 0 8px}
+input[type=range]{width:100%;accent-color:var(--coral);height:28px;cursor:pointer}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:inherit;font-weight:600;border:2px solid var(--ink);background:var(--paper);color:var(--ink);padding:7px 14px;border-radius:999px;cursor:pointer;transition:background .15s,transform .15s}
+.chip:hover{transform:translateY(-2px)}
+.chip[aria-pressed=true]{background:var(--mint);box-shadow:2px 2px 0 var(--ink)}
+.chip.plat[aria-pressed=true]{background:var(--grape);color:#fff}
+.fine{font-size:.85rem;color:var(--ink2);margin-top:14px}
+
+/* phone */
+.phone-col{display:flex;justify-content:center}
+.phone{width:min(320px,100%);background:var(--ink);border-radius:44px;padding:12px;box-shadow:10px 10px 0 var(--coral);animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+@keyframes rise{from{transform:translateY(40px) rotate(4deg);opacity:0}to{transform:none;opacity:1}}
+.screen{background:linear-gradient(170deg,#fff 0%,#eef1ff 100%);border-radius:34px;padding:18px 20px 24px;min-height:520px;position:relative;overflow:hidden}
+.notch{width:90px;height:22px;background:var(--ink);border-radius:0 0 16px 16px;margin:-18px auto 14px}
+.status{display:flex;justify-content:space-between;font-size:.78rem;font-weight:700;color:var(--ink2);margin-bottom:22px}
+.scr-label{font-size:.9rem;color:var(--ink2);font-weight:600}
+.big{font-family:var(--display);font-weight:800;font-size:2.4rem;line-height:1.05;margin:6px 0 4px;min-height:2.6rem}
+.big small{font-size:1.1rem;font-weight:600;color:var(--ink2)}
+.meta{font-size:.9rem;color:var(--ink2);margin-bottom:22px}
+.gauge{height:18px;background:#dde3ff;border-radius:999px;position:relative;margin:10px 0 6px;border:2px solid var(--ink)}
+.gauge span{position:absolute;top:-2px;bottom:-2px;border-radius:999px;background:linear-gradient(90deg,var(--mint),var(--sun),var(--coral));border:2px solid var(--ink);transition:left .35s ease,width .35s ease}
+.scale{display:flex;justify-content:space-between;font-size:.75rem;color:var(--ink2);font-weight:600}
+.steps{display:grid;gap:8px;margin-top:26px}
+.step{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-radius:14px;background:#fff;border:2px solid var(--line);font-size:.88rem;font-weight:600;transition:border-color .2s,background .2s}
+.step b{font-family:var(--display)}
+.step.on{border-color:var(--ink);background:var(--sun)}
+
+/* sections */
+section{padding:72px 0}
+.sec-head{max-width:640px;margin-bottom:36px}
+.sec-head h2{font-size:clamp(1.9rem,4vw,3rem);font-weight:800}
+.sec-head p{margin-top:12px;color:var(--ink2)}
+.band{background:var(--paper);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+
+/* changelog */
+.log{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.ver{background:#fff;border:2px solid var(--ink);border-radius:22px;padding:20px;box-shadow:5px 5px 0 var(--ink);display:flex;flex-direction:column;gap:8px}
+.ver:nth-child(2){box-shadow:5px 5px 0 var(--mint)}
+.ver:nth-child(3){box-shadow:5px 5px 0 var(--sun)}
+.ver:nth-child(4){box-shadow:5px 5px 0 var(--coral)}
+.ver:nth-child(5){box-shadow:5px 5px 0 var(--grape)}
+.ver code{font-family:var(--display);font-weight:800;font-size:1.5rem}
+.ver h3{font-size:1rem}
+.ver .pay{font-weight:700;color:var(--grape)}
+.ver p{font-size:.92rem;color:var(--ink2)}
+
+/* app shelf */
+.shelf{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.app{display:flex;flex-direction:column;align-items:center;text-align:center;text-decoration:none;gap:12px;padding:22px 14px;border-radius:24px;background:var(--sky);border:2px solid var(--ink);transition:transform .2s,box-shadow .2s}
+.app:hover{transform:translateY(-6px);box-shadow:0 8px 0 var(--ink)}
+.icon{width:84px;height:84px;border-radius:26px;display:grid;place-items:center;border:2px solid var(--ink);font-family:var(--display);font-weight:800;font-size:2rem;color:#fff;box-shadow:inset 0 -8px 0 rgba(0,0,0,.14)}
+.app:nth-child(1) .icon{background:#2aa8ff}
+.app:nth-child(2) .icon{background:#27c98a}
+.app:nth-child(3) .icon{background:#15193f}
+.app:nth-child(4) .icon{background:#6b4cff}
+.app:nth-child(5) .icon{background:#ff6a3d}
+.app strong{font-family:var(--display);font-size:1.05rem}
+.app span.d{font-size:.88rem;color:var(--ink2)}
+.app em{font-style:normal;font-weight:700;font-size:.85rem;background:var(--paper);border:2px solid var(--ink);padding:4px 12px;border-radius:999px}
+
+/* notifications */
+.notes{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.note{display:flex;gap:16px;align-items:flex-start;text-decoration:none;background:#fff;border:2px solid var(--ink);border-radius:22px;padding:20px;transition:transform .2s}
+.note:hover{transform:translateX(6px)}
+.note .dot{flex:none;width:46px;height:46px;border-radius:14px;border:2px solid var(--ink);display:grid;place-items:center;font-family:var(--display);font-weight:800}
+.note:nth-child(1) .dot{background:var(--sun)}
+.note:nth-child(2) .dot{background:var(--mint)}
+.note:nth-child(3) .dot{background:var(--coral);color:#fff}
+.note:nth-child(4) .dot{background:var(--grape);color:#fff}
+.note h3{font-size:1.1rem;margin-bottom:4px}
+.note p{font-size:.92rem;color:var(--ink2)}
+.note small{display:block;margin-top:8px;font-weight:700;font-size:.82rem}
+
+/* skills text */
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--paper);border:2px solid var(--ink);border-radius:22px;padding:24px}
+.card h3{font-size:1.2rem;margin-bottom:10px}
+.card p{color:var(--ink2);font-size:.97rem}
+
+/* footer */
+footer{background:var(--ink);color:var(--paper);padding:56px 0 36px}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+footer h4{font-family:var(--display);margin-bottom:12px;font-size:1.05rem}
+footer a{display:block;text-decoration:none;color:#c9d0ff;padding:4px 0}
+footer a:hover{color:var(--sun)}
+footer p{color:#c9d0ff;font-size:.95rem;max-width:42ch}
+.copy{margin-top:36px;padding-top:18px;border-top:1px solid #3b4080;font-size:.85rem;color:#9aa3e8}
+
+@media(max-width:980px){
+  .hero-grid{grid-template-columns:1fr}
+  .log,.shelf{grid-template-columns:repeat(2,1fr)}
+  .cols,.notes,.foot{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .log,.shelf{grid-template-columns:1fr}
+  nav a:not(.go){display:none}
+  .phone{box-shadow:6px 6px 0 var(--coral)}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="Back to top"><i></i>PocketPayslip</a>
+    <nav aria-label="Main">
+      <a href="#versions">Career versions</a>
+      <a href="#lanes">Pick a lane</a>
+      <a href="#reads">Reading list</a>
+      <a class="go" href="https://www.justacademy.co/blog-detail/mobile-app-developer-salary-in-india-skills-career-growth" target="_blank" rel="noopener">Read the full guide</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="tag">Mobile app developer salary in India</span>
+      <h1>Drag the years. Watch the paycheck move.</h1>
+      <p class="lead">What does a mobile app developer really earn in India? The answer changes with experience, platform and the skills you stack. Play with the simulator and see how the numbers shift from your first job to your tenth year.</p>
+
+      <div class="panel" role="group" aria-label="Salary simulator controls">
+        <h3>Build your developer profile</h3>
+        <label class="t" for="yrs"><span>Years of experience</span><span id="yrsOut">2 years</span></label>
+        <input id="yrs" type="range" min="0" max="10" step="0.5" value="2">
+        <label class="t">Platform</label>
+        <div class="chips" id="plats">
+          <button class="chip plat" aria-pressed="false" data-p="Android" data-m="0">Android</button>
+          <button class="chip plat" aria-pressed="false" data-p="iOS" data-m="0.06">iOS</button>
+          <button class="chip plat" aria-pressed="true" data-p="Flutter" data-m="0.02">Flutter</button>
+          <button class="chip plat" aria-pressed="false" data-p="React Native" data-m="0.02">React Native</button>
+        </div>
+        <label class="t">Skills you have stacked</label>
+        <div class="chips" id="skills">
+          <button class="chip" aria-pressed="false">Figma</button>
+          <button class="chip" aria-pressed="false">REST APIs</button>
+          <button class="chip" aria-pressed="false">Testing</button>
+          <button class="chip" aria-pressed="false">Published app</button>
+          <button class="chip" aria-pressed="false">System design</button>
+        </div>
+        <p class="fine">Indicative ranges based on commonly reported market patterns. Real offers depend on company, city, interview performance and negotiation.</p>
+      </div>
+    </div>
+
+    <div class="phone-col">
+      <div class="phone" aria-live="polite">
+        <div class="screen">
+          <div class="notch"></div>
+          <div class="status"><span>9:41</span><span>5G</span></div>
+          <div class="scr-label">Estimated yearly package</div>
+          <div class="big" id="big">6 to 11 <small>lakh</small></div>
+          <div class="meta" id="meta">2 years, Flutter</div>
+          <div class="gauge"><span id="bar"></span></div>
+          <div class="scale"><span>0</span><span>15</span><span>30</span><span>50 lakh</span></div>
+          <div class="steps" id="steps">
+            <div class="step" data-i="0"><span>Fresher</span><b>3 to 6</b></div>
+            <div class="step" data-i="1"><span>Junior, 1 to 3 years</span><b>5 to 10</b></div>
+            <div class="step" data-i="2"><span>Mid level, 3 to 5 years</span><b>9 to 18</b></div>
+            <div class="step" data-i="3"><span>Senior, 5 to 8 years</span><b>16 to 30</b></div>
+            <div class="step" data-i="4"><span>Lead, 8 years and up</span><b>28 to 50+</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="versions" class="band">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>A developer career, shipped in five versions</h2>
+      <p>Every release adds something new. Here is what changes as you move from the first build to the long term support version of yourself.</p>
+    </div>
+    <div class="log">
+      <article class="ver"><code>v1.0</code><h3>The first build</h3><div class="pay">3 to 6 lakh</div><p>You learn a language, finish real projects and publish something a stranger can install.</p></article>
+      <article class="ver"><code>v2.0</code><h3>Owns a feature</h3><div class="pay">5 to 10 lakh</div><p>Tickets turn into features. You handle APIs, state and bugs without being walked through them.</p></article>
+      <article class="ver"><code>v3.0</code><h3>Designs, not just codes</h3><div class="pay">9 to 18 lakh</div><p>Architecture, testing habits and performance start to matter. Juniors begin asking you questions.</p></article>
+      <article class="ver"><code>v4.0</code><h3>Owns the release</h3><div class="pay">16 to 30 lakh</div><p>Reviews, mentoring and system thinking. Teams trust you on release day.</p></article>
+      <article class="ver"><code>v5.0</code><h3>Leads the product</h3><div class="pay">28 to 50 lakh and up</div><p>Lead, architect or founder. You connect business goals with technical choices.</p></article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>What actually moves the number</h2>
+      <p>Degrees matter less than most people think. These three habits show up again and again in higher offers.</p>
+    </div>
+    <div class="cols">
+      <div class="card"><h3>Proof beats promises</h3><p>A published app, a clean GitHub and a short case study tell a recruiter more than a page of skill logos ever will.</p></div>
+      <div class="card"><h3>Breadth around depth</h3><p>Get properly good at one platform, then add design sense, APIs and testing. That combination is hard to replace.</p></div>
+      <div class="card"><h3>Explaining your choices</h3><p>People who can say why they built something a certain way get trusted with bigger work, and bigger work pays more.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="lanes" class="band">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Pick your lane, tap the icon</h2>
+      <p>Five learning paths for Delhi and NCR learners, each one a tap away. Choose the platform that makes you curious, then go deep.</p>
+    </div>
+    <div class="shelf">
+      <a class="app" href="https://www.justacademy.co/course-detail/delhi/flutter-training-in-delhi" target="_blank" rel="noopener"><div class="icon">F</div><strong>Flutter</strong><span class="d">One codebase for Android and iPhone using Dart.</span><em>Open course</em></a>
+      <a class="app" href="https://www.justacademy.co/course-detail/delhi/android-app-development-in-delhi" target="_blank" rel="noopener"><div class="icon">A</div><strong>Android</strong><span class="d">Kotlin and the largest app market in India.</span><em>Open course</em></a>
+      <a class="app" href="https://www.justacademy.co/course-detail/delhi/ios-training-in-delhi" target="_blank" rel="noopener"><div class="icon">i</div><strong>iOS</strong><span class="d">Swift, Xcode and premium app experiences.</span><em>Open course</em></a>
+      <a class="app" href="https://www.justacademy.co/course-detail/delhi/react-native-training-in-delhi" target="_blank" rel="noopener"><div class="icon">R</div><strong>React Native</strong><span class="d">JavaScript and React carried over to mobile.</span><em>Open course</em></a>
+      <a class="app" href="https://www.justacademy.co/course-detail/delhi/figma-training-in-delhi" target="_blank" rel="noopener"><div class="icon">Fg</div><strong>Figma</strong><span class="d">Interface design skills that make developers sharper.</span><em>Open course</em></a>
+    </div>
+  </div>
+</section>
+
+<section id="reads">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Four notifications worth opening</h2>
+      <p>Short reads that fill in the gaps: costs, Swift skills, interview practice and the complete salary guide.</p>
+    </div>
+    <div class="notes">
+      <a class="note" href="https://www.justacademy.co/blog-detail/mobile-app-developer-salary-in-india-skills-career-growth" target="_blank" rel="noopener"><div class="dot">1</div><div><h3>Mobile App Developer Salary in India: Skills and Career Growth</h3><p>Ranges, platforms, hiring paths and a career map, all in one long read.</p><small>Open the guide</small></div></a>
+      <a class="note" href="https://www.justacademy.co/blog-detail/flutter-development-cost-and-timeline-what-businesses-should-know-in-2026" target="_blank" rel="noopener"><div class="dot">2</div><div><h3>Flutter Development Cost and Timeline in 2026</h3><p>What businesses should know before they budget for a cross platform app.</p><small>Open the article</small></div></a>
+      <a class="note" href="https://www.justacademy.co/blog-detail/swift-programming-guide-skills-required-to-become-an-ios-developer" target="_blank" rel="noopener"><div class="dot">3</div><div><h3>Swift Programming Guide: Skills to Become an iOS Developer</h3><p>The language, the tools and the order to learn them in.</p><small>Open the article</small></div></a>
+      <a class="note" href="https://www.justacademy.co/blog-detail/android-developer-interview-questions-for-freshers-and-experienced-developers" target="_blank" rel="noopener"><div class="dot">4</div><div><h3>Android Developer Interview Questions</h3><p>Practice questions for freshers and experienced developers alike.</p><small>Open the article</small></div></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <h4>PocketPayslip</h4>
+        <p>A small interactive companion to the guide on mobile app developer salary in India, built for learners in Delhi, NCR and beyond.</p>
+      </div>
+      <div>
+        <h4>Courses</h4>
+        <a href="https://www.justacademy.co/course-detail/delhi/flutter-training-in-delhi" target="_blank" rel="noopener">Flutter training in Delhi</a>
+        <a href="https://www.justacademy.co/course-detail/delhi/android-app-development-in-delhi" target="_blank" rel="noopener">Android app development in Delhi</a>
+        <a href="https://www.justacademy.co/course-detail/delhi/ios-training-in-delhi" target="_blank" rel="noopener">iOS training in Delhi</a>
+        <a href="https://www.justacademy.co/course-detail/delhi/react-native-training-in-delhi" target="_blank" rel="noopener">React Native training in Delhi</a>
+        <a href="https://www.justacademy.co/course-detail/delhi/figma-training-in-delhi" target="_blank" rel="noopener">Figma training in Delhi</a>
+      </div>
+      <div>
+        <h4>Guides</h4>
+        <a href="https://www.justacademy.co/blog-detail/mobile-app-developer-salary-in-india-skills-career-growth" target="_blank" rel="noopener">App developer salary guide</a>
+        <a href="https://www.justacademy.co/blog-detail/flutter-development-cost-and-timeline-what-businesses-should-know-in-2026" target="_blank" rel="noopener">Flutter cost and timeline</a>
+        <a href="https://www.justacademy.co/blog-detail/swift-programming-guide-skills-required-to-become-an-ios-developer" target="_blank" rel="noopener">Swift guide for iOS developers</a>
+        <a href="https://www.justacademy.co/blog-detail/android-developer-interview-questions-for-freshers-and-experienced-developers" target="_blank" rel="noopener">Android interview questions</a>
+      </div>
+    </div>
+    <div class="copy">Salary figures are indicative ranges for learning purposes and do not guarantee any offer.</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var pts=[[0,3,6],[2,5,10],[4,9,18],[6.5,16,30],[9,28,50]];
+  var yrs=document.getElementById('yrs'),yo=document.getElementById('yrsOut');
+  var big=document.getElementById('big'),meta=document.getElementById('meta'),bar=document.getElementById('bar');
+  var steps=document.querySelectorAll('.step');
+  var plat='Flutter',pm=0.02,sk=0;
+  function lerp(a,b,t){return a+(b-a)*t}
+  function range(y){
+    if(y<=pts[0][0])return [pts[0][1],pts[0][2]];
+    for(var i=1;i<pts.length;i++){
+      if(y<=pts[i][0]){
+        var t=(y-pts[i-1][0])/(pts[i][0]-pts[i-1][0]);
+        return [lerp(pts[i-1][1],pts[i][1],t),lerp(pts[i-1][2],pts[i][2],t)];
+      }
+    }
+    return [pts[4][1],pts[4][2]];
+  }
+  function fmt(n){return Math.round(n*2)/2}
+  function render(){
+    var y=parseFloat(yrs.value);
+    var r=range(y);
+    var boost=1+pm+sk*0.03;
+    var lo=r[0]*boost,hi=r[1]*boost;
+    yo.textContent=(y===1?'1 year':(y%1===0?y:y)+' years');
+    big.innerHTML=fmt(lo)+' to '+fmt(hi)+' <small>lakh</small>';
+    var chosen=[];
+    document.querySelectorAll('#skills .chip[aria-pressed=true]').forEach(function(c){chosen.push(c.textContent)});
+    meta.textContent=yo.textContent+', '+plat+(chosen.length?', '+chosen.length+' extra skill'+(chosen.length>1?'s':''):'');
+    var max=50;
+    bar.style.left=Math.min(lo/max*100,96)+'%';
+    bar.style.width=Math.max(Math.min((hi-lo)/max*100,100-lo/max*100),4)+'%';
+    var idx=y<1?0:y<3?1:y<5?2:y<8?3:4;
+    steps.forEach(function(s,i){s.classList.toggle('on',i===idx)});
+  }
+  yrs.addEventListener('input',render);
+  document.getElementById('plats').addEventListener('click',function(e){
+    var b=e.target.closest('.chip');if(!b)return;
+    document.querySelectorAll('#plats .chip').forEach(function(c){c.setAttribute('aria-pressed','false')});
+    b.setAttribute('aria-pressed','true');
+    plat=b.dataset.p;pm=parseFloat(b.dataset.m);render();
+  });
+  document.getElementById('skills').addEventListener('click',function(e){
+    var b=e.target.closest('.chip');if(!b)return;
+    b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')==='true'?'false':'true');
+    sk=document.querySelectorAll('#skills .chip[aria-pressed=true]').length;render();
+  });
+  render();
+})();
+</script>
+</body>
+</html>
